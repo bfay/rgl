@@ -1,8 +1,8 @@
-		<footer id="footer" class="source-org vcard copyright">
+		<footer id="footer" class="footer">
 			<small>&copy;<?php echo date("Y"); echo " "; bloginfo('name'); ?></small>
 		</footer>
 
-	</div> <!-- ! end page wrap -->
+	</div> <!-- end container -->
 
 	<?php wp_footer(); ?>
 
@@ -11,12 +11,11 @@
 
 <!-- jQuery is called via the Wordpress-friendly way via functions.php -->
 
-<!-- this is where we put our custom functions -->
-<script src="<?php bloginfo('template_directory'); ?>/js/functions.js"></script>
+<!-- this is where to put our custom functions -->
 
 
 
-	
+</div> <!-- end pagewrap  -->	
 </body>
 
 </html>

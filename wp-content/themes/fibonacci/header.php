@@ -65,7 +65,7 @@
 
 
 	
-<link rel='stylesheet' href='http://eighthloop.dev/wp-content/themes/fibonacci/css/fibonacci.css' type='text/css' media='all' />
+<link rel='stylesheet' href='http://www.rgl.dev/wp-content/themes/fibonacci/css/fibonacci.css' type='text/css' media='all' />
 				<!-- drop Google Analytics Here -->
 				
 				
@@ -88,38 +88,41 @@
 </head>
 
 <body>
+
+<div class="pagewrap">	
 	
 	<!-- Start the main container -->
+	
 	<div id="container" class="container" role="document">
 		
 		<!-- Row for blog navigation -->
-		<div class="row">
-			<header>
+		
+		<header class="row">
 			<div class="eleven columns push-one" role="banner">	
-			<a href="/index.php"><img src="http://8images.eighthloop.com/header-ribbon.png"></a>
+			<a href="/index.php"><img src=""></a>
 			</div>		
 			<div class="row">	
 			<nav role="navigation">
 			
 			
 			
-				<a href="/index.php" class="nav1">Journal</a>
+				<a href="/index.php" class="nav1">Home</a>
 				<a href="/about" class="nav2">About</a>
 				
-				<a href="/portfolio" class="nav3">Portfolio</a>
-				<a href="/contact" class="nav4">Contact</a>
+				<a href="/memberships" class="nav3">Memberships</a>
+				<a href="/lessons" class="nav4">Lessons</a>
+				<a href="/store" class="nav5">Store</a>
+				<a href="/contact" class="nav6">Contact</a>
 				
 		
 			</nav>
-			</div>
+			</div><!-- end row  -->
 			
 	
 
 			
 			</header>
-		
-		</div>
-		
+				
 		<!-- Row for main content area -->
 		<div id="main" class="row">
 	
