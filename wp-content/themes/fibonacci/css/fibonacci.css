@@ -1881,16 +1881,18 @@ cite {
   visibility: hidden;
 }
 .pagewrap {
-  background: #441403;
+  background: url('http://www.rgl.dev/wp-content/themes/fibonacci/images/dark_leather.png');
+  width: 100%;
 }
 .container {
   max-width: 1440px;
-  overflow: hidden;
   margin: 0 auto;
   display: block;
   clear: both;
-  background: url('http://www.rgl.dev/wp-content/themes/fibonacci/images/rgl-bg-grunge.jpg');
+  float: left;
   width: 100%;
+  background: url('http://www.rgl.dev/wp-content/themes/fibonacci/images/rgl-bg-grunge.jpg');
+  background-repeat: repeat-y;
 }
 .logo {
   float: none;
@@ -1908,14 +1910,17 @@ cite {
   box-sizing: border-box;
 }
 .header-ribbon {
-  float: none;
   width: 100%;
-  max-width: 1104px;
-  margin: 60px auto;
-  display: block;
+  max-width: 1140px;
   position: relative;
+  float: none;
+  margin: 0 auto;
+  display: block;
+  background: url('http://www.rgl.dev/wp-content/themes/fibonacci/images/rgl-header-v2.png');
+  z-index: 1000;
+  height: 280px;
 }
-.nav1 .nav2 .nav3 .nav4 {
+.nav-home .nav-about .nav-memberships .nav-lessons .nav-store .nav-contact {
   color: #efebe1;
   font-family: serif;
   font-size: 28px;

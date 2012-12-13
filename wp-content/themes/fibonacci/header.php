@@ -67,6 +67,7 @@
 	
 <link rel='stylesheet' href='http://www.rgl.dev/wp-content/themes/fibonacci/css/fibonacci.css' type='text/css' media='all' />
 				<!-- drop Google Analytics Here -->
+<link href='http://fonts.googleapis.com/css?family=Philosopher' rel='stylesheet' type='text/css'>
 				
 				
 		<script type="text/javascript">
@@ -98,21 +99,20 @@
 		<!-- Row for blog navigation -->
 		
 		<header class="row">
-			<div class="eleven columns push-one" role="banner">	
-			<a href="/index.php"><img src=""></a>
-			</div>		
-			<div class="row">	
+			<div class="header-ribbon thirteen columns" role="banner">	
+					
+				
 			<nav role="navigation">
 			
 			
 			
-				<a href="/index.php" class="nav1">Home</a>
-				<a href="/about" class="nav2">About</a>
+				<a href="/index.php" class="nav-home">Home</a>
+				<a href="/about" class="nav-about">About</a>
 				
-				<a href="/memberships" class="nav3">Memberships</a>
-				<a href="/lessons" class="nav4">Lessons</a>
-				<a href="/store" class="nav5">Store</a>
-				<a href="/contact" class="nav6">Contact</a>
+				<a href="/memberships" class="nav-memberships">Memberships</a>
+				<a href="/lessons" class="nav-lessons">Lessons</a>
+				<a href="/store" class="nav-store">Store</a>
+				<a href="/contact" class="nav-contact">Contact</a>
 				
 		
 			</nav>
