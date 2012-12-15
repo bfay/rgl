@@ -3,7 +3,7 @@
    ========================================================================== */
 /*
 Theme Name: Calypso
-Description: A theme with proportions based off of the Fibonacci Sequence.  This is the foundation of the Golden Ratio of 1.6180339887...and has useful applications for aesthetically pleasing web design elements.  Everything from the layout to typography follows a ratio based off the Fibonacci sequence.  The Fibonacci Wordpress Theme also borrows from the HTML Boilerplate, Zurb Foundation 3 SASS and Grid elements, the Gumby Framework UI elements in rare cases, and alot of mathematical ingenuity by Byron Fay.   
+Description: A theme with proportions based off of the Fibonacci Sequence.  This is the foundation of the Golden Ratio of 1.6180339887...and has useful applications for aesthetically pleasing web design elements.  Everything from the layout to typography follows a ratio based off the Fibonacci sequence.  The Calypso Wordpress Theme also borrows from the HTML Boilerplate, Zurb Foundation 3 SASS and Grid elements, the Gumby Framework UI elements in rare cases, and alot of mathematical ingenuity by Byron Fay.   
 Author: Byron Fay
 Author URI: http://www.byronfay.com
 Date: 17.8.2012
@@ -49,6 +49,11 @@ http://blog.typekit.com/2011/11/09/type-study-sizing-the-legible-letter/
 
 /* =Reset
 -------------------------------------------------------------- */
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
 html,
 body,
 div,
@@ -133,11 +138,18 @@ video {
   margin: 0;
   padding: 0;
   border: 0;
-  font-size: 100%;
   vertical-align: baseline;
+}
+html {
+  overflow-y: scroll;
+  font-size: 100%;
+  -webkit-text-size-adjust: 100%;
+  -ms-text-size-adjust: 100%;
 }
 body {
   line-height: 24px;
+  font-size: 16px;
+  font-size: 1rem;
 }
 ol,
 ul {
@@ -172,12 +184,6 @@ h5,
 h6 {
   clear: both;
   text-rendering: optimizelegibility;
-}
-html {
-  overflow-y: scroll;
-  font-size: 100%;
-  -webkit-text-size-adjust: 100%;
-  -ms-text-size-adjust: 100%;
 }
 a:focus {
   outline: thin dotted;
@@ -306,9 +312,6 @@ input[type="color"] {
 /* =Basic structure
 -------------------------------------------------------------- */
 /* Body, links, basics */
-html {
-  font-size: 87.5%;
-}
 body {
   font-size: 16px;
   font-size: 1rem;
@@ -464,6 +467,260 @@ footer[role="contentinfo"] a {
 }
 footer[role="contentinfo"] a:hover {
   color: #21759b;
+}
+/* Links ---------------------- */
+a {
+  color: #2ba6cb;
+  text-decoration: none;
+  line-height: inherit;
+}
+a:hover {
+  color: #2795b6;
+}
+a:focus {
+  color: #2ba6cb;
+  outline: none;
+}
+p a,
+p a:visited {
+  line-height: inherit;
+}
+/* Misc ---------------------- */
+.left {
+  float: left;
+}
+.right {
+  float: right;
+}
+.text-left {
+  text-align: left;
+}
+.text-right {
+  text-align: right;
+}
+.text-center {
+  text-align: center;
+}
+.highlight {
+  background: #ffff99;
+}
+#googlemap img,
+object,
+embed {
+  max-width: none;
+}
+#map_canvas embed {
+  max-width: none;
+}
+#map_canvas img {
+  max-width: none;
+}
+#map_canvas object {
+  max-width: none;
+}
+/* Reset for strange margins by default on <figure> elements */
+figure {
+  margin: 0;
+}
+p {
+  margin: 0 0 12px;
+}
+p small {
+  font-size: 16px;
+  color: #441403;
+  line-height: 24px;
+  font-weight: 400;
+}
+.lead {
+  margin-bottom: 24px;
+  font-size: 24px;
+  font-weight: 200;
+  line-height: 36px;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  margin: 0;
+  line-height: 1.6;
+  font-family: "Philosopher", Georgia, serif;
+  font-weight: 700;
+  color: #441403;
+  text-rendering: optimizelegibility;
+}
+h1 small,
+h2 small,
+h3 small,
+h4 small,
+h5 small,
+h6 small {
+  font-size: 75%;
+  color: #6f6f6f;
+  line-height: 0;
+}
+h1 {
+  font-size: 44px;
+}
+h2 {
+  font-size: 38px;
+}
+h3 {
+  font-size: 28px;
+}
+h4 {
+  font-size: 24px;
+}
+h5 {
+  font-size: 20px;
+}
+h6 {
+  font-size: 16px;
+}
+hr {
+  border: solid #ddd;
+  border-width: 1px 0 0;
+  clear: both;
+  margin: 22px 0 21px;
+  height: 0;
+}
+.subheader {
+  line-height: 1.3;
+  color: #6f6f6f;
+  font-weight: 400;
+  margin-bottom: 17px;
+}
+em,
+i {
+  font-style: italic;
+  line-height: inherit;
+}
+strong,
+b {
+  font-weight: bold;
+  line-height: inherit;
+}
+small {
+  font-size: 60%;
+  line-height: inherit;
+}
+code {
+  font-weight: 700;
+  background: #ffff99;
+}
+.page-header {
+  padding-bottom: 23px;
+  margin: 24px 0;
+  border-bottom: 1px solid #555555;
+}
+.page-header h1 {
+  line-height: 1;
+}
+ul,
+ol {
+  padding: 0;
+  margin: 0 0 12px 25px;
+}
+ul ul,
+ul ol,
+ol ol,
+ol ul {
+  margin-bottom: 0;
+}
+ul {
+  list-style: disc;
+}
+ol {
+  list-style: decimal;
+}
+li {
+  line-height: 24px;
+}
+ul.unstyled,
+ol.unstyled {
+  margin-left: 0;
+  list-style: none;
+}
+dl {
+  margin-bottom: 24px;
+}
+dt,
+dd {
+  line-height: 24px;
+}
+dt {
+  font-weight: bold;
+  line-height: 23px;
+}
+dd {
+  margin-left: 12px;
+}
+.dl-horizontal dt {
+  float: left;
+  width: 120px;
+  clear: left;
+  text-align: right;
+}
+.dl-horizontal dd {
+  margin-left: 130px;
+}
+hr {
+  margin: 24px 0;
+  border: 0;
+  border-top: 1px solid 1px;
+  border-bottom: 1px solid #ffffff;
+}
+strong {
+  font-weight: 700;
+}
+em {
+  font-style: italic;
+}
+.muted {
+  color: #999999;
+}
+abbr[title] {
+  cursor: help;
+  border-bottom: 1px dotted #999999;
+}
+abbr.initialism {
+  font-size: 90%;
+  text-transform: uppercase;
+}
+blockquote {
+  padding: 0 0 0 15px;
+  margin: 0 0 24px;
+  border-left: 5px solid #999999;
+}
+.pull-right {
+  float: right;
+  padding-right: 15px;
+  padding-left: 0;
+  border-right: 5px solid #999999;
+  border-left: 0;
+}
+.pull-right p,
+.pull-right small {
+  text-align: right;
+}
+q:before,
+q:after,
+blockquote:before,
+blockquote:after {
+  content: "";
+}
+address {
+  display: block;
+  margin-bottom: 24px;
+  font-style: 400;
+  line-height: 24px;
+}
+small {
+  font-size: 100%;
+}
+cite {
+  font-style: normal;
 }
 body {
   width: 100%;
@@ -1615,7 +1872,7 @@ that IE7/8 do not support :nth-child.
 }
 #nav-above {
   padding: 24px 0;
-  padding: 1.714285714rem 0;
+  padding: 1.5rem 0;
 }
 #nav-above {
   display: none;
@@ -1637,20 +1894,20 @@ that IE7/8 do not support :nth-child.
 .nav-single + .comments-area,
 #comment-nav-above {
   margin: 48px 0;
-  margin: 3.428571429rem 0;
+  margin: 3rem 0;
 }
 /* Navigation Menu */
 .main-navigation {
   margin-top: 24px;
-  margin-top: 1.714285714rem;
+  margin-top: 1.5rem;
   text-align: center;
 }
 .main-navigation li {
   margin-top: 24px;
-  margin-top: 1.714285714rem;
-  font-size: 12px;
-  font-size: 0.857142857rem;
-  line-height: 1.42857143;
+  margin-top: 1.5rem;
+  font-size: 16px;
+  font-size: 1rem;
+  line-height: 1.5;
 }
 .main-navigation a {
   color: #5e5e5e;
@@ -1669,7 +1926,7 @@ that IE7/8 do not support :nth-child.
 /* Banner */
 section[role="banner"] {
   margin-bottom: 48px;
-  margin-bottom: 3.428571429rem;
+  margin-bottom: 3rem;
 }
 /* Buttons */
 .menu-toggle,
@@ -2896,12 +3153,4 @@ img#wpstats {
     float: none;
     width: auto;
   }
-}
-.site {
-  background: url('http://www.rgl.dev/wp-content/uploads/rgl-bg-grunge.jpg');
-}
-.header-image {
-  margin: 0 auto;
-  width: 100%;
-  max-width: 1140px;
 }
