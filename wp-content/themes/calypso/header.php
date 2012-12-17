@@ -33,28 +33,18 @@
 
 <body <?php body_class(); ?>>
 <div id="page" class="hfeed site">
-
-	<header id="masthead" class="header-image" role="banner">
+	<header id="masthead" class="site-header" role="banner">
 		<hgroup>
-			<!-- !  original php <h1 class="site-title"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" title="<?php echo esc_attr( get_bloginfo( 'name', 'display' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
-			<h2 class="site-description"><?php bloginfo( 'description' ); ?></h2> -->
-		</hgroup>
-		
-		<!-- ! original php <?php $header_image = get_header_image();
+		<?php $header_image = get_header_image();
 		if ( ! empty( $header_image ) ) : ?>
-			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a> -->		
-		
-<div class="row">
-		<nav id="site-navigation" class="main-navigation nine columns centered" role="navigation">
-		
+			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
+		<?php endif; ?>
+		</hgroup>	
+	</header><!-- #masthead -->		
+				
+	<div id="main" class="wrapper">
+			<nav id="site-navigation" class="main-navigation ten columns push-three" role="navigation">
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'calypso' ); ?></h3>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'calypso' ); ?>"><?php _e( 'Skip to content', 'calypso' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
 		</nav><!-- #site-navigation -->
-		</div>
-
-
-		<?php endif; ?>
-	</header><!-- #masthead -->
-
-	<div id="main" class="wrapper">
