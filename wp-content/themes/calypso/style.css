@@ -3165,19 +3165,28 @@ img#wpstats {
 }
 .header-image {
   float: none;
-  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/rgl-header-222px.jpg') center;
   margin: 0 auto;
   position: relative;
   display: block;
 }
-.nav-menu {
-  background: transparent;
+.nav-menu-wrapper {
+  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/header-shadow.png') no-repeat;
   position: relative;
-  margin: -2rem auto;
+  margin: 0 auto;
   float: left;
   display: block;
   width: 100%;
-  text-align: center;
+  max-width: 1140px;
+  overflow: visible;
+}
+.nav-menu {
+  background: transparent;
+  position: relative;
+  margin: 0 auto;
+  float: left;
+  display: block;
+  width: 100%;
+  max-width: 1140px;
 }
 .main-navigation {
   width: 100%;
@@ -3193,7 +3202,6 @@ img#wpstats {
   width: 100%;
   max-width: 1140px;
   margin: 0 auto;
-  padding: 0 15px 15px 15px;
   -webkit-background-size: cover;
   -moz-background-size: cover;
   -o-background-size: cover;
@@ -3201,7 +3209,7 @@ img#wpstats {
 }
 .site-content {
   background: url('http://www.rgl.dev/wp-content/themes/calypso/images/paper.png') repeat;
-  padding: 10px 10px 10px 15px;
+  padding: 0 10px 10px 15px;
   -moz-box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.6);
   -webkit-box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
@@ -3211,4 +3219,5 @@ img#wpstats {
   height: auto;
   display: block;
   float: left;
+  margin-top: 15px;
 }
