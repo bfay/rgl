@@ -14,6 +14,11 @@
 
 get_header(); ?>
 
+<div class="row">
+	<div class="front-page-left seven columns"><img src="http://www.rgl.dev/wp-content/themes/calypso/images/front-page-left.png"/>
+	</div>
+</div>
+
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
 

@@ -3206,3 +3206,9 @@ img#wpstats {
   -webkit-box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.6);
   box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
 }
+.front-page-left {
+  width: 100%;
+  height: auto;
+  display: block;
+  float: left;
+}
