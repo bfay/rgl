@@ -40,6 +40,15 @@
 			<a href="<?php echo esc_url( home_url( '/' ) ); ?>"><img src="<?php echo esc_url( $header_image ); ?>" class="header-image" width="<?php echo get_custom_header()->width; ?>" height="<?php echo get_custom_header()->height; ?>" alt="" /></a>
 		<?php endif; ?>
 		</hgroup>
+		
+		<div class="row">
+			<div class="social">
+			<a href="http://www.facebook.com/mgfreeguitarlessons" title="Rockin Guitar Lessons Facebook Page" class="btn-facebook"></a>
+			<a href="https://twitter.com/rockinguitarles" title="Rockin Guitar Lessons Twitter Page" class="btn-twitter"></a>
+			<a href="mailto: rockinguitarlessons@gmail.com" title="Rockin Guitar Lessons Email" class="btn-mail"></a>
+			
+			</div>
+		</div>
 	
 	</header><!-- #masthead -->		
 				
