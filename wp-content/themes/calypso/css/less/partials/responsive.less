@@ -21,15 +21,29 @@
 	.site-content {
 		float: left;
 		width: 65.104166667%;
+		max-width: 960px;
+		margin-left: 1rem;
+		margin-right: 1rem;
+		padding: 10px 10px 15px 10px;
 	}
 	body.template-front-page .site-content,
 	body.single-attachment .site-content,
 	body.full-width .site-content {
 		width: 100%;
+		
 	}
 	.widget-area {
 		float: right;
 		width: 26.041666667%;
+		background: url('http://www.rgl.dev/wp-content/themes/calypso/images/rgl-sidebar-bg.jpg') repeat-y;
+		display: block;
+		margin-right: 1rem;
+		max-width: 300px;
+		width: 100%;
+		-moz-box-shadow: 0 0 8px 8px rgba(0,0,0, .6);
+		-webkit-box-shadow: 0 0 8px 8px rgba(0,0,0, .6);
+		box-shadow: 0px 0px 8px 8px rgba(0,0,0, .6);
+		padding: 10px 10px 15px 10px;
 	}
 	.site-header h1,
 	.site-header h2 {
@@ -57,7 +71,6 @@
 		text-decoration: none;
 	}
 	.main-navigation li a {
-		border-bottom: 0;
 		color: @orange;
 		line-height: 3.692307692;
 		text-transform: uppercase;
@@ -176,7 +189,7 @@
 		margin-top: 1rem;
 		margin-bottom: 48px;
 		margin-bottom: 3.428571429rem;
-		box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+		box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.7);
 	}
 	body.custom-background-empty {
 		background-color: transparent;

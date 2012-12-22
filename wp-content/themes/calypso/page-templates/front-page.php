@@ -15,13 +15,21 @@
 get_header(); ?>
 
 <div class="row">
-	<div class="front-page-left seven columns"><img src="http://www.rgl.dev/wp-content/themes/calypso/images/front-page-left.png"/>
+	<div class="front-page-left seven columns"><img src="http://www.rgl.dev/wp-content/themes/calypso/images/coming-soon-message.png"/>
 	</div>
 </div>
 
 	<div id="primary" class="site-content">
 		<div id="content" role="main">
-
+			<div class="row">
+				<div class="seven columns">
+					<div class="lesson-library">
+						<a href="http://www.rgl.dev/acoustic_lessons" title="Acoustic Lesson Library" class="red-button-1"></a>
+						<a href="http://www.rgl.dev/electric_lessons" title="Electric Lesson Library" class="red-button-2"></a>					
+					</div>
+				</div>
+			</div>
+			
 			<?php while ( have_posts() ) : the_post(); ?>
 				<?php if ( has_post_thumbnail() ) : ?>
 					<div class="entry-page-image">

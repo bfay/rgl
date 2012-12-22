@@ -1899,6 +1899,7 @@ that IE7/8 do not support :nth-child.
 /* Navigation Menu */
 .main-navigation {
   text-align: center;
+  margin-bottom: 2rem;
 }
 .main-navigation li {
   font-size: 16px;
@@ -2899,6 +2900,10 @@ img#wpstats {
   .site-content {
     float: left;
     width: 65.104166667%;
+    max-width: 960px;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    padding: 10px 10px 15px 10px;
   }
   body.template-front-page .site-content,
   body.single-attachment .site-content,
@@ -2908,6 +2913,15 @@ img#wpstats {
   .widget-area {
     float: right;
     width: 26.041666667%;
+    background: url('http://www.rgl.dev/wp-content/themes/calypso/images/rgl-sidebar-bg.jpg') repeat-y;
+    display: block;
+    margin-right: 1rem;
+    max-width: 300px;
+    width: 100%;
+    -moz-box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.6);
+    -webkit-box-shadow: 0 0 8px 8px rgba(0, 0, 0, 0.6);
+    box-shadow: 0px 0px 8px 8px rgba(0, 0, 0, 0.6);
+    padding: 10px 10px 15px 10px;
   }
   .site-header h1,
   .site-header h2 {
@@ -2935,7 +2949,6 @@ img#wpstats {
     text-decoration: none;
   }
   .main-navigation li a {
-    border-bottom: 0;
     color: #fba43c;
     line-height: 3.692307692;
     text-transform: uppercase;
@@ -3052,7 +3065,7 @@ img#wpstats {
     margin-top: 1rem;
     margin-bottom: 48px;
     margin-bottom: 3.428571429rem;
-    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.7);
+    box-shadow: 0 0 10px 6px rgba(0, 0, 0, 0.7);
   }
   body.custom-background-empty {
     background-color: transparent;
@@ -3187,6 +3200,7 @@ img#wpstats {
   display: block;
   width: 100%;
   max-width: 1140px;
+  padding-left: 4rem;
 }
 .main-navigation {
   width: 100%;
@@ -3220,4 +3234,73 @@ img#wpstats {
   display: block;
   float: left;
   margin-top: 15px;
+}
+.lesson-library {
+  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/lesson-library.png') no-repeat;
+  width: 100%;
+  max-width: 499px;
+  height: 304px;
+  display: block;
+  float: left;
+  position: relative;
+}
+a.red-button-1 {
+  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/red-button.png');
+  max-width: 99px;
+  width: 100%;
+  height: 99px;
+  position: relative;
+  margin-top: 27%;
+  margin-left: 15%;
+  float: left;
+}
+a.red-button-2 {
+  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/red-button.png');
+  max-width: 99px;
+  width: 100%;
+  height: 99px;
+  position: relative;
+  margin-top: 27%;
+  margin-right: 15%;
+  float: right;
+}
+a.red-button-1:hover {
+  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/green-button.png');
+  max-width: 99px;
+  width: 100%;
+  height: 99px;
+  position: relative;
+  margin-top: 27%;
+  margin-left: 15%;
+  float: left;
+}
+a.red-button-1:active {
+  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/dark-green-button.png');
+  max-width: 99px;
+  width: 100%;
+  height: 99px;
+  position: relative;
+  margin-top: 27%;
+  margin-left: 15%;
+  float: left;
+}
+a.red-button-2:hover {
+  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/green-button.png');
+  max-width: 99px;
+  width: 100%;
+  height: 99px;
+  position: relative;
+  margin-top: 27%;
+  margin-right: 15%;
+  float: right;
+}
+a.red-button-2:active {
+  background: url('http://www.rgl.dev/wp-content/themes/calypso/images/dark-green-button.png');
+  max-width: 99px;
+  width: 100%;
+  height: 99px;
+  position: relative;
+  margin-top: 27%;
+  margin-right: 15%;
+  float: right;
 }

@@ -46,7 +46,7 @@
 	<div id="main" class="wrapper">
 			<div class="nav-menu-wrapper">
 			
-			<nav id="site-navigation" class="main-navigation ten columns push-three" role="navigation">
+			<nav id="site-navigation" class="main-navigation ten columns push-two" role="navigation">
 			<h3 class="menu-toggle"><?php _e( 'Menu', 'calypso' ); ?></h3>
 			<a class="assistive-text" href="#content" title="<?php esc_attr_e( 'Skip to content', 'calypso' ); ?>"><?php _e( 'Skip to content', 'calypso' ); ?></a>
 			<?php wp_nav_menu( array( 'theme_location' => 'primary', 'menu_class' => 'nav-menu' ) ); ?>
